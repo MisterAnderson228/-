@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Помощь сдающим ОГЭ по физике</title>
+    <link rel="icon" href=" images/икона проекта.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="a_index.html">
+            <div class="container">
+                <img class='gl_icon' src=" images/икона проекта.png">
+                <h1>ОГЭ налегке</h1>
+            </div>
+        </a>
+            <nav>
+            <ul>
+                <li class='menu__item'><input type="button" value="Темная тема" class="themeButton" ></li>
+                <li><a class="menu__item" href="https://t.me/Vladimir_znaet">Социальные сети</a></li>
+            </ul>
+            </nav>      
+    </header>
+    <div class="mezdy_articluami">
+    <arcticle class="menu">
+      
+      
+        <button class='menu__item' id="text_teoty" onclick = "make_teory_buttons()"><h3>Теория</h3></button>
+        <ul class="buttons_for" id="teory_buttons">
+            <button class='menu__item' id="text_mech" onclick = "make_mech_buttons()"><h4>Механика</h4></button>
+            
+            <ul id="mech_buttons">
+              <li class='menu__item'><input type="button" class="text1" onclick= "make_teory_u1()" value="Механическое движение"></li>
+              <li class='menu__item'><input type="button" class="text2" onclick= "make_teory_u2()" value="Законы Ньютона. Законы сохранения"></li>
+              <li class='menu__item'><input type="button" class="text3" onclick= "make_teory_u3()" value="Работа и энергия"></li>
+              <li class='menu__item'><input type="button" class="text4" onclick= "make_teory_u4()" value="Момент инерции и момент силы"></li>
+              <li class='menu__item'><input type="button" class="text5" onclick= "make_teory_u20()" value="Сила. Давление"></li>
+            </ul>
+
+            <button class='menu__item' id="text_teoty" onclick = "make_termodinamika_buttons()"><h4>Термодинамика</h4></button>
+            <ul id="termodinamika_buttons">
+              <li class='menu__item'><input type="button" class="text5" onclick= "make_teory_u5()" value="Тепловые процессы"></li>
+              <li class='menu__item'><input type="button" class="text6" onclick= "make_teory_u6()" value="Законы термодинамики"></li>
+              <li class='menu__item'><input type="button" class="text7" onclick= "make_teory_u7()" value="Теплопередача"></li>
+              <li class='menu__item'><input type="button" class="text8" onclick= "make_teory_u8()" value="Циклы тепловых машин"></li>
+            </ul>
+            <button class='menu__item' id="text_teoty" onclick = "make_el_vo_buttons()"><h4>Электричество и магнетизм</h4></button>
+            <ul id="el_vo_buttons">
+              <li class='menu__item'><input type="button" class="text9" onclick= "make_teory_u9()" value="Законы электростатики"></li>
+              <li class='menu__item'><input type="button" class="text10" onclick= "make_teory_u10()" value="Законы магнетизма и электрические явления"></li>
+              <li class='menu__item'><input type="button" class="text11" onclick= "make_teory_u11()" value="Электрические цепи"></li>
+              <li class='menu__item'><input type="button" class="text12" onclick= "make_teory_u12()" value="Электромагнитные колебания и волны"></li>
+            </ul>
+            <button class='menu__item' id="text_teoty" onclick = "make_optika_buttons()"><h4>Оптика</h4></button>
+            <ul id="optika_buttons">
+             <li class='menu__item'><input type="button" class="text13" onclick= "make_teory_u13()" value="Геометрическая и физическая оптика"></li>
+             <li class='menu__item'><input type="button" class="text14" onclick= "make_teory_u14()" value="Дифракция и интерференция"></li>
+             <li class='menu__item'><input type="button" class="text15" onclick= "make_teory_u15()" value="Спектры и цвет"></li>
+            </ul>
+            <button class='menu__item' id="text_teoty" onclick = "make_elementarnie_chastisi_buttons()"><h4>Элементарные частицы и атомная физика</h4></button>
+            <ul id="elementarnie_chastisi_buttons">
+              <li class='menu__item'><input type="button" class="text16" onclick= "make_teory_u16()" value="Строение атома"></li>
+              <li class='menu__item'><input type="button" class="text17" onclick= "make_teory_u17()" value="Радиоактивность"></li>
+              <li class='menu__item'><input type="button" class="text18" onclick= "make_teory_u18()" value="Элементарные частицы"></li>
+              <li class='menu__item'><input type="button" class="text19" onclick= "make_teory_u19()" value="Квантовая механика"></li>
+        </ul>
+            </ul>
+          </ul>
+        <button class='menu__item' id="text_praktika" onclick = "make_praktika_buttons()"><h3>Практические задания</h3></button>
+        <ul class="buttons_for" id="praktika_buttons">
+            <li class='menu__item'><input type="button" class="zadacha1" onclick= "make_zadachi_z1()" value="1.Физический смысл величин"></li>
+            <li class='menu__item'><input type="button" class="zadacha2" onclick= "make_zadachi_z2()" value="2.Распознавание законов и формул"></li>
+            <li class='menu__item'><input type="button" class="zadacha3" onclick= "make_zadachi_z3()" value="3.Распознавание физических явлений"></li>
+            <li class='menu__item'><input type="button" class="zadacha4" onclick= "make_zadachi_z4()" value="4.Определение и свойства физических явлений"></li>
+            <li class='menu__item'><input type="button" class="zadacha5" onclick= "make_zadachi_z5()" value="5.Вычисления с помощью законов и формул"></li>
+            <li class='menu__item'><input type="button" class="zadacha6" onclick= "make_zadachi_z6()" value="6.Вычисления с помощью законов и формул"></li>
+            <li class='menu__item'><input type="button" class="zadacha7" onclick= "make_zadachi_z7()" value="7.Вычисления с помощью законов и формул"></li>
+            <li class='menu__item'><input type="button" class="zadacha8" onclick= "make_zadachi_z8()" value="8.Вычисления с помощью законов и формул"></li>
+            <li class='menu__item'><input type="button" class="zadacha9" onclick= "make_zadachi_z9()" value="9.Вычисления с помощью законов и формул"></li>
+            <li class='menu__item'><input type="button" class="zadacha10" onclick= "make_zadachi_z10()" value="10.Вычисления с помощью законов и формул"></li>
+            <li class='menu__item'><input type="button" class="zadacha11" onclick= "make_zadachi_z11()" value="11.Изменение физических величин"></li>
+            <li class='menu__item'><input type="button" class="zadacha12" onclick= "make_zadachi_z12()" value="12.Изменение физических величин"></li>
+            <li class='menu__item'><input type="button" class="zadacha13" onclick= "make_zadachi_z13()" value="13.Физические явления и законы. Анализ процессов"></li>
+            <li class='menu__item'><input type="button" class="zadacha14" onclick= "make_zadachi_z14()" value="14.Физические явления и законы. Анализ процессов"></li>
+            <li class='menu__item'><input type="button" class="zadacha15" onclick= "make_zadachi_z15()" value="15.Измерения с помощью приборов"></li>
+            <li class='menu__item'><input type="button" class="zadacha16" onclick= "make_zadachi_z16()" value="16.Проведение опытов, интерпретация результатов"></li>
+            <li class='menu__item'><input type="button" class="zadacha17" onclick= "make_zadachi_z17()" value="17.Косвенные измерения физических величин"></li>
+            <li class='menu__item'><input type="button" class="zadacha18" onclick= "make_zadachi_z18()" value="18.Понимание принципа действия тех. устройств"></li>
+            <li class='menu__item'><input type="button" class="zadacha19" onclick= "make_zadachi_z19()" value="19.Применение информации из текста"></li>
+            <li class='menu__item'><input type="button" class="zadacha20" onclick= "make_zadachi_z20()" value="20.Применение информации из текста"></li>
+            <li class='menu__item'><input type="button" class="zadacha21" onclick= "make_zadachi_z21()" value="21.Применение информации из текста"></li>
+            <li class='menu__item'><input type="button" class="zadacha22" onclick= "make_zadachi_z22()" value="22.Решение задач жизненного характера"></li>
+            <li class='menu__item'><input type="button" class="zadacha23" onclick= "make_zadachi_z23()" value="23.Решение задач с использованием формул"></li>
+            <li class='menu__item'><input type="button" class="zadacha24" onclick= "make_zadachi_z24()" value="24.Комбинированная задача"></li>
+            <li class='menu__item'><input type="button" class="zadacha25" onclick= "make_zadachi_z25()" value="25.Комбинированная задача"></li>
+          </ul>
+        <button class='menu__item' id="text_lab" onclick = "make_lab_buttons()"><h3>Лабораторные работы</h3></button>
+        <ul id="lab_buttons">
+            <li class='menu__item'><input type="button" class="lab1" onclick= "make_lab_l1()" value="Плотность"></li>
+            <li class='menu__item'><input type="button" class="lab1" onclick= "make_lab_l2()" value="Геометрическая оптика"></li>
+            <li class='menu__item'><input type="button" class="lab1" onclick= "make_lab_l3()" value="Диффузия"></li>
+            <li class='menu__item'><input type="button" class="lab1" onclick= "make_lab_l4()" value="Массы и пружины"></li>
+          </ul>
+        
+    </arcticle>
+    
+    
+<div class='art'>
+<article id="teory" class="hidden">
+  <h3>Теория</h3>
+    <article id="mechanics">
+        <div><h2>Механика</h2></div>
+        <p>Механика — раздел физики, изучающий движение материальных объектов и причины этого движения.</p>
+        <div>
+          <div class='absolute_position' id="u1"></div>
+          <div class='absolute_position' id="u2"></div>
+          <div class='absolute_position' id="u3"></div>
+          <div class='absolute_position' id="u4"></div>
+          <div class='absolute_position' id="u20"></div>
+        </div>
+      </article>
+  
+      <article id="thermodynamics">
+        <div><h2>Термодинамика</h2></div>
+        <p>Термодинамика — раздел физики, изучающий тепловые процессы и их преобразование в механическую энергию.</p>
+        <div>
+          <div class='absolute_position' id="u5"></div>
+          <div class='absolute_position' id="u6"></div>
+          <div class='absolute_position' id="u7"></div>
+          <div class='absolute_position' id="u8"></div>
+        </div>
+      </article>
+
+      <article id="electricity">
+        <div><h2>Электричество и магнетизм</h2></div>
+        <p>Электричество и магнетизм — раздел физики, изучающий электрические и магнитные явления.</p>
+        <div>
+          <div class='absolute_position' id="u9"></div>
+          <div class='absolute_position' id="u10"></div>
+          <div class='absolute_position' id="u11"></div>
+          <div class='absolute_position' id="u12"></div>
+        </div>
+      </article>
+
+      <article id="optics">
+        <div><h2>Оптика</h2></div>
+        <p>Оптика — раздел физики, изучающий световые явления и их взаимодействие с материей.</p>
+        <div>
+            <div class='absolute_position' id="u13"></div>
+          <div class='absolute_position' id="u14"></div>
+          <div class='absolute_position' id="u15"></div>
+        </div>
+      </article>
+
+      <article id="particles">
+        <div><h2>Элементарные частицы и атомная физика</h2></div>
+        <p>Элементарные частицы и атомная физика — раздел физики, изучающий структуру вещества на микроскопическом уровне.</p>
+        <div>
+          <div class='absolute_position' id="u16"></div>
+          <div class='absolute_position' id="u17"></div>
+          <div class='absolute_position' id="u18"></div>
+          <div class='absolute_position' id="u19"></div>
+        </div>
+      </article>
+</article>
+
+    <article id="practika">
+      <h3> Практические задания</h3>
+          <article class="zadachi">
+            <div class='absolute_position' id="z1"> </div>
+            <div class='absolute_position' id="z2"> </div>
+            <div class='absolute_position' id="z3"> </div>
+            <div class='absolute_position' id="z4"> </div>
+            <div class='absolute_position' id="z5"> </div>
+            <div class='absolute_position' id="z6"> </div>
+            <div class='absolute_position' id="z7"> </div>
+            <div class='absolute_position' id="z8"> </div>
+            <div class='absolute_position' id="z9"> </div>
+            <div class='absolute_position' id="z10"> </div>
+            <div class='absolute_position' id="z11"> </div>
+            <div class='absolute_position' id="z12"> </div>
+            <div class='absolute_position' id="z13"> </div>
+            <div class='absolute_position' id="z14"> </div>
+            <div class='absolute_position' id="z15"> </div>
+            <div class='absolute_position' id="z16"> </div>
+            <div class='absolute_position' id="z17"> </div>
+            <div class='absolute_position' id="z18"> </div>
+            <div class='absolute_position' id="z19"> </div>
+            <div class='absolute_position' id="z20"> </div>
+            <div class='absolute_position' id="z21"> </div>
+            <div class='absolute_position' id="z22"> </div>
+            <div class='absolute_position' id="z23"> </div>
+            <div class='absolute_position' id="z24"> </div>
+            <div class='absolute_position' id="z25"> </div>
+          </article></article>
+          <article id="lab">
+            <h3>Лабораторные работы</h3>
+            <div class='absolute_position' id="l1"> </div>
+            <div class='absolute_position' id="l2"> </div>
+            <div class='absolute_position' id="l3"> </div>
+            <div class='absolute_position' id="l4"> </div>
+          </article>
+  </div>
+  </div></div>
+    <footer>
+        <ul>
+            <li><p class="fooerP">ОГЭ налегке @2024: все права защищены </p></li>
+            <li><p class='footerP'>+7 977 885 xx xx</p></li>
+        </ul>
+        <ul class="footer_ul">
+            <li><a class="menu__item" href="#">О проекте</a></li>
+            <li><a class="menu__item" href="#">Редакция</a></li>
+            <li><a class="menu__item" href="https://phet.colorado.edu/en/simulations/filter?subjects=physics&type=html">Правовая информация</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
